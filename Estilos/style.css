@@ -5,3 +5,39 @@ Paleta de cores
 verde: #49a09d
 lilás: #5f2c82 */
 
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #5f2c82;
+
+}
+
+main {
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+}
+
+section#login {
+    position: absolute;
+    
+    width: 250px;
+    height: 515px;
+    background-color: white;
+    position: absolute;
+    border-radius: 20px;
+
+}
+
+section#login > div#imagem {
+    background: #5f2c82 url(../Imagens/metal.jpg) no-repeat;
+    background-size: cover;
+    background-position:left bottom;
+        border-radius: 20px 20px 0 0;
+    height: 200px;
+
+    
+}
