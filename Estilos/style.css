@@ -24,11 +24,13 @@ lilás: #5f2c82 */
     font-family: 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     margin: 0;
     padding: 0;
+    box-sizing: border-box; /* Para a bordar fazer parte  da conta de largura*/
 }
 
-body {
+body, html {
     background-color: #5f2c82;
-
+    height: 100vh;
+    width: 100vw;
 }
 
 main {
@@ -36,6 +38,36 @@ main {
     height: 100vh;
     position: relative;
 }
+
+section#login {
+    background-color: white;
+    width: 250px;
+    height: 515px;
+    border-radius: 20px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    overflow: hidden;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.450);
+    transition: width 0.3s, height 0.3s;
+    transition-timing-function: ease;
+}
+
+section#login > div#imagem {
+    background: #5f2c82 url(../Imagens/metal.jpg) no-repeat;
+    background-size: cover;
+    background-position:left bottom;
+    height: 200px;
+    display: block;
+    
+}
+
+section#login > div#formulario {
+    padding: 10px;
+    display: block;
+}
+
 
 h1 {
     text-align: center;
@@ -61,7 +93,7 @@ div.campo > input {
     font-size: 1em;
     border: 0;
     border-radius: 8px;
-    transform: translateX(19px);
+    width: calc(100%-45px);
     height: 100%;
    
 
@@ -72,37 +104,6 @@ form > input[type=submit] {
     height: 40px;
 }
 
-section#login {
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    width: 250px;
-    height: 515px;
-    background-color: white;
-    position: absolute;
-    border-radius: 20px;
-
-}
-
-#formulario {
-    padding: 0 10px;
-}
-
-section#login > div#formulario > p {
-    font-size: 0.8em;
-    display: block;
-}
-
-section#login > div#imagem {
-    background: #5f2c82 url(../Imagens/metal.jpg) no-repeat;
-    background-size: cover;
-    background-position:left bottom;
-    border-radius: 20px 20px 0 0;
-    height: 200px;
-
-    
-}
 
 form > a.botao {
     display: block;
